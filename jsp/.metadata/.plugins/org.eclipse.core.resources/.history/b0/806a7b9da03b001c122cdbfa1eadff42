@@ -1,0 +1,19 @@
+<%@page import="java.sql.Connection"%>
+<%@ page contentType="text/html" pageEncoding="utf-8" %>
+<%@ page import="java.util.*" %>
+<%@ page import="util.*" %>
+<%@ page import="dao.TodoDAO" %>
+<%
+	request.setCharacterEncoding("utf-8");
+
+	String todo = request.getParameter("todo");
+	
+	TodoDAO dao = new TodoDAO();
+	
+	if(dao.del(no)){
+		response.sendRedirect("main.jsp");
+	}else{
+		out.print("오류 발생");
+	}
+	
+%>

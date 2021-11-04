@@ -1,0 +1,13 @@
+package util;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class FileUtil {
+	public static void saveImage(String fname, byte[] data) 
+		throws IOException {
+			
+			f = new File("/"+fname);
+			FileOutputStream out = new FileOutputStream(f);
+		}
+}

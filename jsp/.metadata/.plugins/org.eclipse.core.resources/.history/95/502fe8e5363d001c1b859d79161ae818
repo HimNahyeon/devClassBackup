@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>사진 등록 연습</title>
+</head>
+<body>
+	<form action = "photoAdd.jsp" method="post" enctype="multipart/form-data"> 
+		
+	</form>
+</body>
+</html>

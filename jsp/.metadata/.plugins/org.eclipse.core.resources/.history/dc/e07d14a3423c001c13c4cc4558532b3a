@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<context>
+	<Resource name="jdbc/webShop"
+	auth = "Container"
+	type = "javax.sql.DataSource"
+	driverClassName="com.mysql.jdbc.Driver"
+	url="jdbc:mysql://localhost:3307/webshop?serverTimezone=UTC"
+	/>
+</context>

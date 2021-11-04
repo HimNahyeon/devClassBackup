@@ -1,0 +1,45 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>지역변수와 전역변수 local variable, global variable</title>
+</head>
+<body>
+	<!--
+		변수 variable
+		: 데이터를 저장하기 위한 장소를 가리키는 이름을 말한다.
+		
+		   데이터 형   변수명
+		  String	a    =  "변수";
+	 -->
+	 
+	 <%!
+	 //전역변수 선언
+	 	int globalvar = 0;
+	 %> 
+	 
+	 <%
+	 //지역변수 선언
+	 	int localvar = 0;
+	 	out.print("global var = " + globalvar++ + "</br>");
+	 	out.print("local var = " + localvar++ + "</br>");
+	 %>
+	 
+	 <!--
+	 	데이터 형
+	 		int 숫자
+	 		double(float) 실수
+	 		String 문자열(***) : 스트링은 기본형이 아니어서 원래 객체를 생성하고 사용해야 하지만 그냥 사용가능
+	 		String a = "문자열";
+	 		
+	 		
+	 	상수
+	 		아래와 같이 선언할때 대문자를 사용
+	 		
+	 		int MAX_SIZE = 10;
+	 		String ID = "root:;
+	  -->
+</body>
+</html>

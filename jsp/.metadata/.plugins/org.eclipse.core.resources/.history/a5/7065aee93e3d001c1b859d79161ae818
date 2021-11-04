@@ -1,0 +1,7 @@
+package util;
+
+public class FileUtil {
+	public static void saveImage(String root, String fname) {
+		
+	}
+}

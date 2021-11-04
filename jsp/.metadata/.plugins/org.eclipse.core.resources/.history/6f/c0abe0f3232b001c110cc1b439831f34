@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!-- 원래는 이렇게 해야하는데 생략-->    
+<%@ page import = "java.lang.String"' %>   
+
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문자열 String</title> 
+</head>
+<body>
+	<%
+	String univ = "first university";
+	
+	//원래는 이렇게 해야하는데  String은 위와같이 일반적으로..
+	String str1 = new String("first ...."); 
+	%>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인 인증</title>
+</head>
+<body>
+	<%
+		String msg = ""; 	
+		String userid = "admin";
+		String userpw = "0000";
+		
+		String login_id = "admin";
+		String login_pw = "0001";
+		
+		if ((userid == login_id) && (userpw == login_pw)){
+			msg = "아이디와 비밀번호가 일치합니다.";
+		}else{
+			msg = "아이디와 비밀번호가 일치하지 않습니다.";
+		}
+		
+		// & 를 하나 쓰면  앞에꺼가 일치하지않아도 뒤의 조건까지 검사하므로 쓸데없이돌아감
+		// 그래서 && 이런형태로 두개 씀
+	
+	%>
+	
+	로그인 인증 : <%=msg %>
+	
+	
+	<!-- switch 문을 알아보자 -->
+	<%
+		int year = 3;
+		String msg1 = "";
+		
+		switch(year){
+		case 1: msg1 = "freshman";
+					break; //브레이크를 만나야 나간다!.
+		case 2: msg1 = "sophomore";
+					break; //브레이크를 만나야 나간다!.
+		case 3: msg1 = "junior";
+					break; //브레이크를 만나야 나간다!.
+		case 4: msg1 = "senior";
+					break; //브레이크를 만나야 나간다!.
+		
+		}
+	%>
+</body>
+</html>

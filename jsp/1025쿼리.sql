@@ -1,0 +1,8 @@
+DESC user;
+
+CREATE TABLE feed (
+	NO INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+	id VARCHAR(128),
+	content VARCHAR(4096),
+	ts TIMESTAMP DEFAULT current_timestamp
+	);

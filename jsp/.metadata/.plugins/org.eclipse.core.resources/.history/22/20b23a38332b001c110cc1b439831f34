@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<%
+	int su = 1;
+	int sum = 0;
+	
+	do{
+		//일단 무조건 진입! 한번은 실행된다!
+		sum = sum + su;
+		su ++;
+	}while(su<=10);
+	%>
+</body>
+</html>

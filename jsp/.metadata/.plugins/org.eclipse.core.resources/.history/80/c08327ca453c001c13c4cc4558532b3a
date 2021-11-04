@@ -1,0 +1,12 @@
+package dao;
+
+public class ProductObj {
+	private String pid;
+	private String pname;
+	private String pdescription;
+	private String pprice;
+	private String pfilename;
+	
+	pid VARCHAR(32) PRIMARY KEY,
+	
+}

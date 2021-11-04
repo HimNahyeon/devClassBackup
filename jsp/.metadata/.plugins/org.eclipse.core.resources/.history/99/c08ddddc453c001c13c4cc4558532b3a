@@ -1,0 +1,42 @@
+package dao;
+
+public class ProductObj {
+	private String pid;
+	private String pname;
+	private String pdescription;
+	private String pprice;
+	private String pfilename;
+	public String getPid() {
+		return pid;
+	}
+	public void setPid(String pid) {
+		this.pid = pid;
+	}
+	public String getPname() {
+		return pname;
+	}
+	public void setPname(String pname) {
+		this.pname = pname;
+	}
+	public String getPdescription() {
+		return pdescription;
+	}
+	public void setPdescription(String pdescription) {
+		this.pdescription = pdescription;
+	}
+	public String getPprice() {
+		return pprice;
+	}
+	public void setPprice(String pprice) {
+		this.pprice = pprice;
+	}
+	public String getPfilename() {
+		return pfilename;
+	}
+	public void setPfilename(String pfilename) {
+		this.pfilename = pfilename;
+	}
+
+	
+	
+}

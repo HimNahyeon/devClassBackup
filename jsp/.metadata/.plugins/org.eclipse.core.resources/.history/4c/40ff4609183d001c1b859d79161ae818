@@ -1,0 +1,9 @@
+package dao;
+
+public class MemberObj {
+	private String cid;
+	private String cpassword;
+	private String cname;
+	private String cgender;
+	private String cbirth;
+}

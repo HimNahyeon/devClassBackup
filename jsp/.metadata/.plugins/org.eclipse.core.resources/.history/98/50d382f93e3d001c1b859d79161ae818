@@ -1,0 +1,10 @@
+package util;
+
+import java.io.IOException;
+
+public class FileUtil {
+	public static void saveImage(String root, String fname, byte[] data) 
+		throws IOException {
+		
+		}
+}

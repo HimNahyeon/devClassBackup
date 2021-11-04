@@ -1,0 +1,28 @@
+package dao;
+
+public class MemberObj {
+	private String cid;
+	private String cpassword;
+	private String cname;
+	private String cgender;
+	private String cbirth;
+	private String cemail;
+	private String cphone;
+	private String caddress;
+	private String cregiday;
+	
+	public MemberObj(String cid, String cpassword, String cname, String cgender,
+			String cbirth, String cemail, String cphone, String caddress,	String cregiday) {
+		super();
+		this.cid = cid;
+		this.cpassword = cpassword;
+		this.cname = cname;
+		this.cgender = cgender;
+		cbirth;
+		cemail;
+		cphone;
+		caddress;
+		cregiday;
+	}
+	}
+}

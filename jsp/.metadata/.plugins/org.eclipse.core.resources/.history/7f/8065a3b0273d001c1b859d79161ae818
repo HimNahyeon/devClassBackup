@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%
+	request.setCharacterEncoding("UTF-8");
+
+	String id = request.getParameter("id");
+	String pass = request.getParameter("password");
+	String name = request.getParameter("name");
+	String gender = request.getParameter("gender");
+	//생년월일 각각 따로
+	String birthyy = request.getParameter("birthyy");
+	String birthmm = request.getParameter("birthmm");
+	String birthdd = request.getParameter("birthdd");
+	String  = request.getParameter("id");
+
+%>

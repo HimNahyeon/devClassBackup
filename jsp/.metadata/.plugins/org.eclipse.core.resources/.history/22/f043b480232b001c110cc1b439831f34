@@ -1,0 +1,15 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<%@ page import = "java.lang.String"' %>  <!-- 원래는 이렇게 해야하는데 생략 -->    
+    
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문자열 String</title> 
+</head>
+<body>
+	
+</body>
+</html>
