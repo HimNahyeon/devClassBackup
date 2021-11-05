@@ -68,7 +68,7 @@ public class MemberDAO {
 	   }
 	
 
-	   public ArrayList<MemberObj> getList()
+	   public MemberObj getDetail(String id)
 	         throws NamingException, SQLException {
 	         
 	         Connection conn = null;
@@ -76,25 +76,23 @@ public class MemberDAO {
 	         ResultSet rs = null;
 	         
 	         try {
-	            String sql = "SELECT * FROM member";
+	            String sql = "SELECT * FROM member WHERE(cid=?)";
 	            
 	            conn = ConnectionPool.get();
 	            stmt = conn.prepareStatement(sql);
+		            stmt.setString(1, id);
 	            rs = stmt.executeQuery();
 	            
-	            ArrayList<MemberObj> members = new ArrayList<MemberObj>();
-
-	            while(rs.next()) {
-	               members.add(new MemberObj(rs.getString("cid"),rs.getString("cpassword"),
-	                     rs.getString("cname"),rs.getString("cgender"),rs.getString("cbirth"),
-	                     rs.getString("cemail"),rs.getString("cphone"),
-	                     rs.getString("caddress"),rs.getString("cregiday")
-	                     ));
-	            } return members;
-	         }finally {
+               MemberObj member = new MemberObj(rs.getString("cid"),rs.getString("cpassword"),
+                     rs.getString("cname"),rs.getString("cgender"),rs.getString("cbirth"),
+                     rs.getString("cemail"),rs.getString("cphone"),
+                     rs.getString("caddress"),rs.getString("cregiday"));
+            	return member;
+            	
+	   		}finally {
 	            if (rs != null) rs.close();
 	            if (stmt != null) stmt.close();
 	            if (conn != null) conn.close();
-	         }
-	      }
+	   		}
+	   	}
 }
